@@ -8,7 +8,7 @@ from influxdb import InfluxDBClient
 cnxn = pypyodbc.connect("Driver={ODBC Driver 17 for SQL Server};"
                         "Server=LLSANDBOX-PC\SQLEXPRESS;"
                         "Database=HBT.ECD.BACnet;"
-                        "uid=SQLadmin;pwd=LL22@@")
+                        "uid=SQLadmin;pwd=***")
 
 cursor = cnxn.cursor()
 cursor.execute("SELECT * FROM [HBT.ECD.BACnet].[dbo].[HBT18017000_Data] where [DPTimeStamp] >" + ((datetime.now() - timedelta(hours=25)).strftime('%y%m%d%H%M%S')) + " order by [DPTimeStamp] desc")
