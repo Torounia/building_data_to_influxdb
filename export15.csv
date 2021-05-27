@@ -1,4 +1,4 @@
-﻿#constant measurement,BMS
-#datatype field,field,field,field,tag,double,dateTime:RFC3339
+#constant measurement,BMS
+#datatype,field,field,field,field,tag,double,dateTime:RFC3339
 "LAN","OS","InputOutput_ID","Equipment_ID","Point_Label","Value","Generated_Timestamp"
 "L31","O13","S17","S_LAB_AHU4","Intake AIr Temp",15.8,"2021-05-27T13:47:39Z"
